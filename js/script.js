@@ -1,5 +1,5 @@
 // const BASE_URL = 'https://api.sleeper.app/v1/'
-// let playerData;
+let playerData = []
 
 
 function getData() {
@@ -18,21 +18,23 @@ getData()
 // 784456593403224064
 
 
-// async function fetchData() {
+async function fetchData() {
 
-//     const response = await fetch('https://api.sleeper.app/v1/league/784456593403224064/users');
-//     const data = await response.json();
+    const response = await fetch('https://api.sleeper.app/v1/league/784456593403224064/users');
+    const data = await response.json();
+    // console.log(data)
+    const map1 = playerData.map(
+        x => x.display_name
+    )
+    console.log(map1)
 
-//     data.forEach(obj => {
-//         Object.entries(obj).forEach(([key, value]) => {
-//             console.log(`${key} ${value}.`);
-//         });
-//         console.log('-------------------');
-//     });
-// }
+    // data.forEach(obj => {
+    //     Object.entries(obj).forEach(([key, value]) => {
+    //         console.log(`${key} ${value}`);
+    //     });
+    //     console.log('-------------------');
+    // });
+}
 
-// function fetchUserName() {
-//     fetchData()
-// }
 
-// fetchUserName()
+fetchData()
