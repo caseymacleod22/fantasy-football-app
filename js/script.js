@@ -1,15 +1,20 @@
-// const BASE_URL = 'https://api.sleeper.app/v1/'
 let playerData = []
 
-async function fetchData() {
 
-    const response = await fetch('https://api.sleeper.app/v1/league/784456593403224064/users');
-    const data = await response.json();
-    console.log(data)
-    const map1 = data.map(
-        x => x.display_name
-    )
-    console.log(map1)
-}
-
-fetchData()
+$(document).ready(function() {
+    $.ajax({
+            url: 'https://api.sleeper.app/v1/league/784456593403224064/users',
+            type: 'GET',
+            success: function(result) {
+                playerData = result.map(result => result.display_name);
+                console.log(playerData);
+                $("#container").append(JSON.stringify(playerData));
+                // playerData = result
+                // console.log(playerData)
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+})
+    
