@@ -1,4 +1,4 @@
-let playerData = []
+// let playerData = []
 
 
 $(document).ready(function() {
