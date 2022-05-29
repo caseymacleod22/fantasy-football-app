@@ -30,7 +30,7 @@ $(document).ready(function() {
                 // console.log(playerData)
             },
             error: function(err) {
-                console.log(err)
+                // console.log(err)
             }
     })
 })
