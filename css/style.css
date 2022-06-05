@@ -13,3 +13,9 @@ body {
     height: 3rem;
     width: 3rem;
 }
+
+#avatar0, #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6, #avatar7, #avatar8, #avatar9 {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
