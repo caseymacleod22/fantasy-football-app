@@ -45,3 +45,33 @@ $(document).ready(function() {
             }
     })
 });
+
+$(document).ready(function() {
+    $.ajax({
+            url: 'https://api.sleeper.app/v1/draft/784456593403224065',
+            type: 'GET',
+            success: function(result) {
+                playerData = result.slot_to_roster_id[1]
+                console.log(playerData)
+                $('.draft-slots').append(playerData)
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
+
+$(document).ready(function() {
+    $.ajax({
+            url: 'https://api.sleeper.app/v1/draft/784456593403224065',
+            type: 'GET',
+            success: function(result) {
+                playerData = result.status
+                console.log(playerData)
+                $('.draft-status').append(playerData)
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
