@@ -29,7 +29,7 @@ body {
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 10%;
+    width: 34.45%;
     text-align: left;
     border: none;
     outline: none;
@@ -47,6 +47,7 @@ body {
     background-color: white;
     display: none;
     overflow: hidden;
+    width: 30%;
   }
 
 li {
