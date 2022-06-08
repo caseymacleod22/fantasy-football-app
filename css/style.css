@@ -34,6 +34,8 @@ body {
     border: none;
     outline: none;
     transition: 0.4s;
+    text-align: center;
+    font-size: 1.5rem;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
