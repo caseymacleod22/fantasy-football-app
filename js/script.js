@@ -25,7 +25,7 @@ $(document).ready(function() {
             success: function(result) {
                 scoringData = result.scoring_settings
                 $.map( scoringData, function( val, i ) {
-                    $('.accordion-list').append(val + i)
+                    $('.accordion-list').append('<li>' + val + i)
                   });
             },
             error: function(err) {

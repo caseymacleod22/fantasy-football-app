@@ -49,6 +49,6 @@ body {
     overflow: hidden;
   }
 
-  .accordion-list {
+li {
       color:#444;
   }
