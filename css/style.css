@@ -48,3 +48,7 @@ body {
     display: none;
     overflow: hidden;
   }
+
+  .accordion-list {
+      color:#444;
+  }

@@ -23,6 +23,22 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064',
             type: 'GET',
             success: function(result) {
+                scoringData = result.scoring_settings
+                $.map( scoringData, function( val, i ) {
+                    $('.accordion-list').append(val + i)
+                  });
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
+
+$(document).ready(function() {
+    $.ajax({
+            url: 'https://api.sleeper.app/v1/league/784456593403224064',
+            type: 'GET',
+            success: function(result) {
                 playerData = result.total_rosters
                 $('.rosters').append(playerData)
             },
