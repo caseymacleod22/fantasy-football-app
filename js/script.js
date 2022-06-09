@@ -39,7 +39,8 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064/rosters',
             type: 'GET',
             success: function(result) {
-                teamData = result.starters
+                teamData = result[1].starters
+                console.log(teamData)
                 $.map(teamData, function(val) {
                     $('.starters-list').append('<li>' + val)
                   });
