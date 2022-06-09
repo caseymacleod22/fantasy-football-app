@@ -36,6 +36,22 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $.ajax({
+            url: 'https://api.sleeper.app/v1/league/784456593403224064/rosters',
+            type: 'GET',
+            success: function(result) {
+                teamData = result.starters
+                $.map(teamData, function(val) {
+                    $('.starters-list').append('<li>' + val)
+                  });
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
+
+$(document).ready(function() {
+    $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064',
             type: 'GET',
             success: function(result) {

@@ -7,6 +7,7 @@ body {
 }
 
 .test {
+    /* display: flex; */
     color: white;
     font-size: 18px;
     font-family: 'futura';
