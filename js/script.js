@@ -60,7 +60,7 @@ $(document).ready(function() {
                 $('.rosters').append(playerData)
             },
             error: function(err) {
-                console.log(err)
+                // console.log(err)
             }
     })
 });
