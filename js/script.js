@@ -142,3 +142,19 @@ $(document).ready(function() {
             }
     })
 });
+
+$(document).ready(function() {
+    $.ajax({
+            url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
+            type: 'GET',
+            success: function(result) {
+                playerAdded = result[0].adds
+                playerDropped = result[0].drops
+                console.log(playerAdded, playerDropped)
+
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
