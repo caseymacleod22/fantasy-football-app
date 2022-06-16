@@ -151,7 +151,8 @@ $(document).ready(function() {
                 playerAdded = result[0].adds
                 playerDropped = result[0].drops
                 console.log(playerAdded, playerDropped)
-
+                $('.added').append(playerAdded)
+                // $('.dropped').append(playerDropped)
             },
             error: function(err) {
                 console.log(err)
