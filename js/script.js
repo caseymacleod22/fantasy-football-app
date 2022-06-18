@@ -39,10 +39,10 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064/rosters',
             type: 'GET',
             success: function(result) {
-                teamStarters = result.starters
+                teamStarters = result[0].starters
+                console.log(teamStarters)
                 $.map(teamStarters, function(starter, i) {
-                    $(`.starters-list${i}`).append('<li>' + starter)
-                    console.log(starter)
+                    $('.starters-list0').append('<li>' + starter)
                   });
             },
             error: function(err) {
