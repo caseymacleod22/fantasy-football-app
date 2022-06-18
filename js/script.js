@@ -39,14 +39,14 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064/rosters',
             type: 'GET',
             success: function(result) {
-                teamData = result[1].starters
-                console.log(teamData)
-                $.map(teamData, function(val) {
-                    $('.starters-list').append('<li>' + val)
-                  });
+                teamData = result.map(result => result.starters);
+                teamData.forEach((starter, item) => {
+                    $(`.starters-list${item}`).append('<li>' + starter);
+                    console.log(starter)
+                });
             },
             error: function(err) {
-                // console.log(err)
+                console.log(err)
             }
     })
 });
