@@ -42,7 +42,7 @@ $(document).ready(function() {
                 teamData = result.map(result => result.starters);
                 teamData.map((starter, item) => {
                     $(`.starters-list${item}`).append('<li>'+starter+'</li>');
-                    console.log(starter)
+                    // console.log(starter)
                 });
             },
             error: function(err) {
@@ -148,10 +148,15 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
             type: 'GET',
             success: function(result) {
-                playerAdded = result[0].adds
-                playerDropped = result[0].drops
-                console.log(playerAdded, playerDropped)
-                $('.added').append(playerAdded)
+                playerAdded = result[2].adds
+                playerDropped = result[2].drops
+                for (let [key, value] of Object.entries(playerAdded)) {
+                    console.log(key, value);
+                    $('.added').append(playerAdded)
+                    $('.dropped').append(playerDropped)
+                }
+                // console.log(playerAdded, playerDropped)
+                // $('.added').append(playerAdded)
                 // $('.dropped').append(playerDropped)
             },
             error: function(err) {
