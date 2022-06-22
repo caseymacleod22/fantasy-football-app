@@ -149,15 +149,15 @@ $(document).ready(function() {
             type: 'GET',
             success: function(result) {
                 playerAdded = result[2].adds
-                playerDropped = result[2].drops
                 for (let [key, value] of Object.entries(playerAdded)) {
-                    console.log(key, value);
-                    $('.added').append(playerAdded)
-                    $('.dropped').append(playerDropped)
+                    // console.log(key, value);
+                    $('.added').append(key)
                 }
-                // console.log(playerAdded, playerDropped)
-                // $('.added').append(playerAdded)
-                // $('.dropped').append(playerDropped)
+                playerDropped = result[2].drops
+                for (let [key, value] of Object.entries(playerDropped)) {
+                    // console.log(key, value);
+                    $('.dropped').append(key)
+                }
             },
             error: function(err) {
                 console.log(err)
