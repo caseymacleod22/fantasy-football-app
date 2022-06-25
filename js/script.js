@@ -150,7 +150,7 @@ $(document).ready(function() {
             success: function(result) {
                 playerAdded = result[2].adds
                 for (let [key, value] of Object.entries(playerAdded)) {
-                    // console.log(key, value);
+                    console.log(playerAdded);
                     $('.added').append(key)
                 }
                 playerDropped = result[2].drops
