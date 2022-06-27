@@ -119,7 +119,7 @@ $(document).ready(function() {
             type: 'GET',
             success: function(result) {
                 playerData = result.slot_to_roster_id[1]
-                console.log(playerData)
+                // console.log(playerData)
                 $('.draft-slots').append(playerData)
             },
             error: function(err) {
