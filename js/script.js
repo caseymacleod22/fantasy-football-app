@@ -118,9 +118,9 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/draft/784456593403224065',
             type: 'GET',
             success: function(result) {
-                playerData = result.slot_to_roster_id[1]
-                console.log(playerData)
-                $('.draft-slots').append(playerData)
+                draftData = result.type
+                console.log(draftData)
+                $('.draft-type').append(draftData)
             },
             error: function(err) {
                 console.log(err)
