@@ -1,3 +1,11 @@
+//Capitalization function
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+let test = 'this is a string'
+console.log(capitalizeFirstLetter(test))
+
 // League info accordion function
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -118,7 +126,7 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/draft/784456593403224065',
             type: 'GET',
             success: function(result) {
-                draftData = result.type
+                draftData = result.type.capitalizeFirstLetter()
                 console.log(draftData)
                 $('.draft-type').append(draftData)
             },
