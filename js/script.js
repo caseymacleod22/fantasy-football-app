@@ -126,7 +126,7 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/draft/784456593403224065',
             type: 'GET',
             success: function(result) {
-                draftData = result.type.capitalizeFirstLetter()
+                draftData = result.type
                 console.log(draftData)
                 $('.draft-type').append(draftData)
             },
@@ -144,6 +144,21 @@ $(document).ready(function() {
                 playerData = result.status
                 console.log(playerData)
                 $('.draft-status').append(playerData)
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
+
+$(document).ready(function() {
+    $.ajax({
+            url: 'https://api.sleeper.app/v1/draft/784456593403224065',
+            type: 'GET',
+            success: function(result) {
+                startData = result.start_time
+                console.log(startData)
+                $('.start-time').append(startData).JSON
             },
             error: function(err) {
                 console.log(err)
