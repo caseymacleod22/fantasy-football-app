@@ -2,6 +2,10 @@
     color: white;
 }
 
+.main-header {
+  text-align: center;
+}
+
 body {
     background-color: navy;
 }
