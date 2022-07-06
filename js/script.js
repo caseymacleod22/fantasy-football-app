@@ -6,7 +6,7 @@ function capitalizeFirstLetter(string) {
 // let test = 'this is a string'
 // console.log(capitalizeFirstLetter(test))
 
-// League info accordion function
+// Accordion function
 var acc = document.getElementsByClassName("accordion");
 var i;
 
