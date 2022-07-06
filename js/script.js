@@ -3,8 +3,8 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-let test = 'this is a string'
-console.log(capitalizeFirstLetter(test))
+// let test = 'this is a string'
+// console.log(capitalizeFirstLetter(test))
 
 // League info accordion function
 var acc = document.getElementsByClassName("accordion");
