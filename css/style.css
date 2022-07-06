@@ -35,13 +35,14 @@ body {
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 34.45%;
+    width: 12%;
+    height: 5%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
