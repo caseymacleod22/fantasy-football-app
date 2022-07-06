@@ -195,7 +195,7 @@ $(document).ready(function() {
             success: function(result) {
                 playerAdded = result.map(result => result.player_id);
                 playerAdded.forEach((player, item) => {
-                    $(`.trending-players`).append(player + ', ')
+                    $(`.trending-players`).append('<li>'+player+'</li>')
                 });
             },
             error: function(err) {
