@@ -190,7 +190,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $.ajax({
-            url: 'https://api.sleeper.app/v1/players/nfl/trending/add?lookback_hours=240&limit=25',
+            url: 'https://api.sleeper.app/v1/players/nfl/trending/add?lookback_hours=240&limit=15',
             type: 'GET',
             success: function(result) {
                 playerAdded = result.map(result => result.player_id);
