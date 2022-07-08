@@ -171,12 +171,12 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
             type: 'GET',
             success: function(result) {
-                playerAdded = result[2].adds
+                playerAdded = result[9].adds
                 for (let [key, value] of Object.entries(playerAdded)) {
                     console.log(playerAdded);
                     $('.added').append(key)
                 }
-                playerDropped = result[2].drops
+                playerDropped = result[9].drops
                 for (let [key, value] of Object.entries(playerDropped)) {
                     // console.log(key, value);
                     $('.dropped').append(key)
