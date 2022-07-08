@@ -65,8 +65,8 @@ body {
 
 .trending-container {
   float: right;
-  margin-right: 2rem;
-  text-align: center;
+  margin-right: 10rem;
+  text-align: left;
 }
 
 .trending-players {
