@@ -193,9 +193,9 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/players/nfl/trending/add?lookback_hours=240&limit=15',
             type: 'GET',
             success: function(result) {
-                playerAdded = result.map(result => result.player_id);
-                playerAdded.forEach((player) => {
-                    $(`.trending-players`).append('<li>'+player+'</li>')
+                trendingUp = result.map(result => result.player_id);
+                trendingUp.forEach((player) => {
+                    $(`.trending-up`).append('<li>'+player+'</li>')
                 });
             },
             error: function(err) {

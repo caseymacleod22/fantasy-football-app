@@ -63,7 +63,7 @@ body {
       color:#444;
   }
 
-.trending-container {
+.trending-up-container {
   float: right;
   margin-right: 7rem;
   text-align: left;
@@ -75,7 +75,7 @@ body {
   text-align: left;
 }
 
-.trending-players, .trending-down {
+.trending-up, .trending-down {
   color: white;
   list-style: none;
   font-size: 20px;
