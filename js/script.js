@@ -203,3 +203,19 @@ $(document).ready(function() {
             }
     })
 });
+
+$(document).ready(function() {
+    $.ajax({
+            url: 'https://api.sleeper.app/v1/players/nfl/trending/drop?lookback_hours=240&limit=15',
+            type: 'GET',
+            success: function(result) {
+                trendingDown = result.map(result => result.player_id);
+                trendingDown.forEach((player) => {
+                    $(`.trending-down`).append('<li>'+player+'</li>')
+                });
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
