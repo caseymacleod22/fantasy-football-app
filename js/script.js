@@ -48,7 +48,7 @@ $(document).ready(function() {
             type: 'GET',
             success: function(result) {
                 teamData = result.map(result => result.starters);
-                teamData.map((starter, item) => {
+                teamData.forEach((starter, item) => {
                     $(`.starters-list${item}`).append('<li>'+starter+'</li>');
                     // console.log(starter)
                 });

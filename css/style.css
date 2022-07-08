@@ -63,7 +63,15 @@ body {
       color:#444;
   }
 
+.trending-container {
+  float: right;
+  margin-right: 2rem;
+  text-align: center;
+}
+
 .trending-players {
   color: white;
+  list-style: none;
+  font-size: 20px;
 }
 
