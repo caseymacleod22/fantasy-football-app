@@ -172,8 +172,9 @@ $(document).ready(function() {
             type: 'GET',
             success: function(result) {
                 playerAdded = result.map(result => result.adds);
-                playerAdded.forEach((player) => {
-                    $(`.added`).append('<li>'+player+'</li>')
+                Object.values(playerAdded).forEach(value => {
+                    console.log(value, playerAdded[value]);
+                    $(`.added`).append('<li>'+JSON.stringify(value, playerAdded[value])+ '</li>')
                 });
             },
             error: function(err) {
