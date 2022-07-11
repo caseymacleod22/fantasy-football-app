@@ -171,7 +171,7 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
             type: 'GET',
             success: function(result) {
-                playerAdded = result.map(result => result.adds);
+                playerAdded = result.map(result => result.adds).slice(0, 10);
                 Object.values(playerAdded).forEach(value => {
                     console.log(value, playerAdded[value]);
                     $(`.added`).append('<li>'+JSON.stringify(value, playerAdded[value])+ '</li>')
