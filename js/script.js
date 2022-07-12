@@ -185,6 +185,23 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $.ajax({
+            url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
+            type: 'GET',
+            success: function(result) {
+                playerDropped = result.map(result => result.drops).slice(0, 10);
+                Object.values(playerDropped).forEach(value => {
+                    console.log(value, playerDropped[value]);
+                    $(`.dropped`).append('<li>'+JSON.stringify(value, playerDropped[value])+ '</li>')
+                });
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
+
+$(document).ready(function() {
+    $.ajax({
             url: 'https://api.sleeper.app/v1/players/nfl/trending/add?lookback_hours=240&limit=15',
             type: 'GET',
             success: function(result) {
