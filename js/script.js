@@ -26,6 +26,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
+//Scoring Settings function
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064',
@@ -42,6 +44,8 @@ $(document).ready(function() {
     })
 });
 
+
+//Fetches team starters
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064/rosters',
@@ -59,6 +63,7 @@ $(document).ready(function() {
     })
 });
 
+// Fetches total teams in league
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064',
@@ -73,6 +78,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays owner names
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064/users',
@@ -89,6 +95,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays team names
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064/users',
@@ -105,6 +112,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays team avatar
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064/users',
@@ -121,6 +129,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays information about draft
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/draft/784456593403224065',
@@ -136,6 +145,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays draft status
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/draft/784456593403224065',
@@ -151,6 +161,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays draft start time
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/draft/784456593403224065',
@@ -166,6 +177,8 @@ $(document).ready(function() {
     })
 });
 
+
+// Displays recently added players
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
@@ -183,6 +196,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays recently dropped players
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
@@ -200,6 +214,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays players trending up
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/players/nfl/trending/add?lookback_hours=240&limit=15',
@@ -216,6 +231,7 @@ $(document).ready(function() {
     })
 });
 
+// Displays players trending down
 $(document).ready(function() {
     $.ajax({
             url: 'https://api.sleeper.app/v1/players/nfl/trending/drop?lookback_hours=240&limit=15',
