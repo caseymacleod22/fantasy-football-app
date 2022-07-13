@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&family=Raleway:wght@300;500&display=swap');
+
 * {
     color: white;
 }
@@ -15,7 +17,7 @@ body {
     margin-top: -270px;
     color: white;
     font-size: 18px;
-    font-family: 'futura';
+    font-family: 'Poppins', sans-serif;
 }
 
 #avatar0, #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6, #avatar7, #avatar8, #avatar9 {
