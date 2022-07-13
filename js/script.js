@@ -184,10 +184,11 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
             type: 'GET',
             success: function(result) {
-                playerAdded = result.map(result => result.adds).slice(0, 10);
-                Object.values(playerAdded).forEach(value => {
-                    console.log(value, playerAdded[value]);
-                    $(`.added`).append('<li>'+JSON.stringify(value, playerAdded[value])+ '</li>')
+                playerAdded = result.map(result => result.adds).slice(0, 15);
+                let filteredPlayer = playerAdded.filter(player => player !== null)
+                Object.values(filteredPlayer).forEach(value => {
+                    console.log(value, filteredPlayer[value]);
+                    $(`.added`).append('<li>'+JSON.stringify(value, filteredPlayer[value])+ '</li>')
                 });
             },
             error: function(err) {
@@ -202,10 +203,10 @@ $(document).ready(function() {
             url: 'https://api.sleeper.app/v1/league/784456593403224064/transactions/1',
             type: 'GET',
             success: function(result) {
-                playerDropped = result.map(result => result.drops).slice(0, 10);
-                Object.values(playerDropped).forEach(value => {
-                    console.log(value, playerDropped[value]);
-                    $(`.dropped`).append('<li>'+JSON.stringify(value, playerDropped[value])+ '</li>')
+                playerDropped = result.map(result => result.drops).slice(0, 15);let filteredPlayer = playerDropped.filter(player => player !== null)
+                Object.values(filteredPlayer).forEach(value => {
+                    console.log(value, filteredPlayer[value]);
+                    $(`.dropped`).append('<li>'+JSON.stringify(value, filteredPlayer[value])+ '</li>')
                 });
             },
             error: function(err) {
