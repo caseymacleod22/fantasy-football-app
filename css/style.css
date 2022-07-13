@@ -2,6 +2,8 @@
 
 * {
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
 }
 
 .main-header {
@@ -17,8 +19,6 @@ body {
     margin-top: -270px;
     color: white;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
 }
 
 #avatar0, #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6, #avatar7, #avatar8, #avatar9 {
