@@ -11,8 +11,8 @@ body {
     background-color: navy;
 }
 
-.test {
-    /* display: flex; */
+.league-members-container {
+    margin-top: -270px;
     color: white;
     font-size: 18px;
     font-family: 'futura';
@@ -83,8 +83,15 @@ body {
 
 .transaction-container {
   display: flex;
+  justify-content: flex-end;
   margin-right: 7rem;
   text-align: left;
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 230px;
 }
 
 .dropped {
