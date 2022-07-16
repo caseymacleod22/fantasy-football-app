@@ -3,6 +3,12 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+// Comment Button submission
+$(".comment-button").click(function(event) {
+    event.preventDefault()
+    console.log("comment submitted!")
+})
+
 // let test = 'this is a string'
 // console.log(capitalizeFirstLetter(test))
 
