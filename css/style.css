@@ -18,7 +18,7 @@ body {
 .league-members-container {
     margin-top: -28rem;
     color: white;
-    /* font-size: 18px; */
+    font-size: 18px;
 }
 
 #avatar0, #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6, #avatar7, #avatar8, #avatar9 {
