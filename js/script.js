@@ -260,7 +260,9 @@ $(document).ready(function() {
             url: 'http://localhost:8000/comments',
             type: 'GET',
             success: function(result) {
-                console.log(result)
+                let commentData = result[0].comment_user +':' + result[0].comment_content
+                console.log(commentData)
+                $('.comment-section').append(commentData)
             },
             error: function(err) {
                 console.log(err)
