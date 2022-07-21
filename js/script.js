@@ -254,3 +254,16 @@ $(document).ready(function() {
             }
     })
 });
+
+$(document).ready(function() {
+    $.ajax({
+            url: 'http://localhost:8000/comments',
+            type: 'GET',
+            success: function(result) {
+                console.log(result)
+            },
+            error: function(err) {
+                console.log(err)
+            }
+    })
+});
