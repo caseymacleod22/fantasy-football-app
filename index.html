@@ -154,9 +154,11 @@
     <div class="draft-status"></div>
     <div class="start-time"></div>
 </div>
-<form action="">
-    <input type="textarea" class="comment-box" placeholder="Leave a comment or talk some trash!">
-    <button type="submit" class="comment-button">Comment</button>
+<form method="POST" onsubmit="return doComment(this)">
+    <input type="hidden" name="post_id" value="<%= post._id %>">
+    <input type="text" class="username-box" name="username">
+    <input type="textarea" class="comment-box" name="comment" placeholder="Leave a comment or talk some trash!">
+    <button type="submit" class="comment-button" onclick={postComment()}>Comment</button>
 </form>
 <div class="comment-section">
 

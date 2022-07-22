@@ -269,3 +269,16 @@ $(document).ready(function() {
             }
     })
 });
+
+function doComment(form) {
+    $.ajax({
+        url: '/comments',
+        type: 'POST',
+        data: {username: form.username.value, comment: form.comment.value},
+        post_id: form.post_id.value,
+        success: function(response) {
+            alert(response)
+        }
+    })
+    return false
+}
