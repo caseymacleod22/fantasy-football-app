@@ -3,12 +3,6 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// Comment Button submission
-$(".comment-button").click(function(event) {
-    event.preventDefault()
-    console.log("comment submitted!")
-})
-
 // let test = 'this is a string'
 // console.log(capitalizeFirstLetter(test))
 
@@ -274,7 +268,7 @@ function doComment(form) {
     $.ajax({
         url: '/comments',
         type: 'POST',
-        data: {username: form.username.value, comment: form.comment.value},
+        data: {username: form.comment_user.value, comment: form.comment_content.value},
         post_id: form.post_id.value,
         success: function(response) {
             alert(response)
