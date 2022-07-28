@@ -154,9 +154,8 @@
     <div class="draft-status"></div>
     <div class="start-time"></div>
 </div>
-<form method="POST" action="/comments">
-    <input type="hidden" name="post_id" value="<%= post._id>
-    <input type="text" class="username-box" name="comment_user" placeholder="test">
+<form method="POST" action="http://localhost:8000/comments">
+    <input type="text" class="comment-box" name="comment_user" placeholder="test">
     <input type="textarea" class="comment-box" name="comment_content" placeholder="Leave a comment or talk some trash!">
     <button type="submit" class="comment-button">Comment</button>
 </form>
