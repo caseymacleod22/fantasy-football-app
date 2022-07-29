@@ -79,7 +79,8 @@ body {
   }
 
 .starters-list0 > li, .starters-list1 > li, .starters-list2 > li, .starters-list3 > li, .starters-list4 > li, .starters-list5 > li, .starters-list6 > li, .starters-list7 > li, .starters-list8 > li, .starters-list9 > li {
-      color:#444;
+      color:#fff;
+      /* display: none; */
   }
 
 .trending-up-container {
