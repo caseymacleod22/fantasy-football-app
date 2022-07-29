@@ -53,11 +53,7 @@ $(document).ready(function() {
             success: function(result) {
                 teamData = result.map(result => result.starters);
                 teamData.forEach((starter, item) => {
-                    $(`.starters-list${item}`).append('<li>'+starter[0]+'</li>');
-                    $('.starters-list:last').append(teamData.map((starter, index) => {
-                        $(`.starters-list${item}`).append('<li>'+starter+'</li>')
-                      }));
-                    console.log(starter)
+                    $(`.starters-list${item}`).append('<li>'+starter+'</li>');
                 });
             },
             error: function(err) {

@@ -20,7 +20,7 @@ body {
     color: white;
     font-size: 18px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     padding: 20px;
     margin: 10px auto 20px;
@@ -32,7 +32,7 @@ body {
 
 .player-container {
   border: 3px solid white;
-  width: 13rem;
+  width: 16rem;
   padding:25px;
 }
 
@@ -80,7 +80,7 @@ body {
 
 .starters-list0 > li, .starters-list1 > li, .starters-list2 > li, .starters-list3 > li, .starters-list4 > li, .starters-list5 > li, .starters-list6 > li, .starters-list7 > li, .starters-list8 > li, .starters-list9 > li {
       color:#fff;
-      /* display: none; */
+      display: none;
   }
 
 .trending-up-container {
