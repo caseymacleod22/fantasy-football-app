@@ -48,19 +48,22 @@ $(document).ready(function() {
 //Fetches team starters
 $(document).ready(function() {
     $.ajax({
-            url: 'https://api.sleeper.app/v1/league/784456593403224064/rosters',
-            type: 'GET',
-            success: function(result) {
-                teamData = result.map(result => result.starters);
-                teamData.forEach((starter, item) => {
-                    $(`.starters-list${item}`).append('<li>'+starter+'</li>');
+        url: 'https://api.sleeper.app/v1/league/784456593403224064/rosters',
+        type: 'GET',
+        success: function(result) {
+            teamData = result.map(result => result.starters);
+            teamData.forEach((starter, item) => {
+                starter.forEach((entry) => { // loop the starter
+                    $(`.starters-list${item}`).append('<li>'+entry+'</li>');
                 });
-            },
-            error: function(err) {
-                console.log(err)
-            }
+            });
+        },
+        error: function(err) {
+            console.log(err)
+        }
     })
 });
+
 
 // Fetches total teams in league
 $(document).ready(function() {
