@@ -16,9 +16,18 @@ body {
 }
 
 .league-members-container {
-    margin-top: -28rem;
+    /* margin-top: -28rem; */
     color: white;
     font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.player-container {
+  border: 3px solid white;
+  width: 15rem;
 }
 
 #avatar0, #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6, #avatar7, #avatar8, #avatar9 {
@@ -46,6 +55,7 @@ body {
     transition: 0.4s;
     text-align: center;
     font-size: 1rem;
+    display: none;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
