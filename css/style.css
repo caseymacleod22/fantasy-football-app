@@ -20,14 +20,20 @@ body {
     color: white;
     font-size: 18px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
+    margin: 10px auto 20px;
+}
+
+.league-members-container > div {
+  margin: 5px;
 }
 
 .player-container {
   border: 3px solid white;
-  width: 15rem;
+  width: 13rem;
+  padding:25px;
 }
 
 #avatar0, #avatar1, #avatar2, #avatar3, #avatar4, #avatar5, #avatar6, #avatar7, #avatar8, #avatar9 {
