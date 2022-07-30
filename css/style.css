@@ -83,6 +83,10 @@ body {
       /* display: none; */
   }
 
+.player-movement {
+  display: flex;
+}
+
 .trending-up-container {
   float: right;
   margin-right: 7rem;
@@ -110,8 +114,8 @@ body {
 
 .transaction-header {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 230px;
+  justify-content: flex-start;
+  margin-left: 3rem;
 }
 
 .dropped {
