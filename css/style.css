@@ -126,6 +126,15 @@ body {
   margin-right: 4rem;
 }
 
+.trending-header {
+  padding-right: 16.5rem;
+}
+
+.player-movement-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .comment-box {
   width: 35%;
   color: black;
