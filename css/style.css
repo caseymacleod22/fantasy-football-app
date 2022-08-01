@@ -32,7 +32,7 @@ body {
 
 .player-container {
   border: 3px solid white;
-  width: 16rem;
+  width: 13rem;
   padding:25px;
 }
 
@@ -67,15 +67,6 @@ body {
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    width: 40%;
   }
 
 .starters-list0 > li, .starters-list1 > li, .starters-list2 > li, .starters-list3 > li, .starters-list4 > li, .starters-list5 > li, .starters-list6 > li, .starters-list7 > li, .starters-list8 > li, .starters-list9 > li {
